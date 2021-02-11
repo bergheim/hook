@@ -1,10 +1,3 @@
 # hook
-test
-test
-test
-test
-test
-test
-test
-test
-test
+
+Test for hooks and actions.
