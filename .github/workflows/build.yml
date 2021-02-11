@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    branches: main
+    branches: master
 
 jobs:
   build:
@@ -28,6 +28,6 @@ jobs:
           # email body as text
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
           # comma-separated string, send email to
-          to: thomas.bergheim@neptune-software.com,spammers@glvortex.net
+          to: ${{ secrets.EMAIL_ONE }}, ${{ secrets.EMAIL_TWO }}
           # from email name
           from: P9 CI/CD
